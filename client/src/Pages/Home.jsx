@@ -156,7 +156,7 @@ function Home() {
             </div>
 
             <div className="gallery-card">
-              <img src="/images/Bitterleaff.jpg" alt="Banga Soup" />
+              <img src="/images/bitterleaff.jpg" alt="Banga Soup" />
               <div className="gallery-content">
                 <h4>Bitter Leaf Soup</h4>
                 <p>
@@ -198,7 +198,7 @@ function Home() {
           <div className="gallery-grid">
 
             <div className="gallery-card">
-              <img src="/images/jollof.jpeg" alt="Jollof Rice" />
+              <img src="/images/Jollof.jpeg" alt="Jollof Rice" />
               <div className="gallery-content">
                 <h4>Classic Jollof Rice</h4>
                 <p>
@@ -263,7 +263,7 @@ function Home() {
           <div className="gallery-grid">
 
             <div className="gallery-card">
-              <img src="/images/fish.jpeg" alt="Grilled Fish" />
+              <img src="/images/Fish.jpeg" alt="Grilled Fish" />
               <div className="gallery-content">
                 <h4>Grilled Fish</h4>
                 <p>
