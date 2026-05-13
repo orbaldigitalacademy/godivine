@@ -126,7 +126,7 @@ function Home() {
             </div>
 
             <div className="gallery-card">
-              <img src="/images/banga.jpeg" alt="Banga Soup" />
+              <img src="/images/Banga.jpeg" alt="Banga Soup" />
               <div className="gallery-content">
                 <h4>Banga Delight</h4>
                 <p>
