@@ -1,0 +1,73 @@
+/* ===============================
+   Luxury Color System
+================================= */
+:root {
+  --primary: #7b1e1e;       /* Deep Wine */
+  --primary-dark: #5a1515;
+  --gold: #d4af37;          /* Royal Gold */
+  --gold-soft: #f4e2a1;
+  --cream: #fdfaf6;         /* Soft Champagne */
+  --dark: #1a1a1a;
+  --text: #333;
+  --white: #ffffff;
+
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --shadow-strong: 0 15px 40px rgba(0, 0, 0, 0.15);
+  --transition: all 0.35s ease;
+  --brand-green: #0dec88;      /* replace with your exact logo green */
+  --brand-green-dark: #0f8952;
+}
+
+/* ===============================
+   Reset & Base
+================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary-dark);
+  line-height: 1.7;
+  scroll-behavior: smooth;
+}
+
+/* ===============================
+   Typography
+================================= */
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  color: var(--primary);
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+p {
+  margin-bottom: 18px;
+  font-size: 1.05rem;
+}
+
+/* ===============================
+   Buttons (Premium Feel)
+================================= */
+.btn {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: var(--white);
+  padding: 14px 34px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+

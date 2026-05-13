@@ -1,0 +1,14 @@
+import AdminSidebar from "../components/AdminSidebar";
+
+function AdminLayout({ children }) {
+  return (
+    <div className="flex min-h-screen">
+      <AdminSidebar />
+      <div className="flex-1 p-6 bg-gray-100">
+        {children}
+      </div>
+    </div>
+  );
+}
+
+export default AdminLayout;
