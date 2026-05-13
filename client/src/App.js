@@ -7,7 +7,7 @@ import Gallery from "./Pages/Gallery";
 import Contact from "./Pages/Contact";
 import { Login } from "./Pages/Login";
 import AdminDashboard from "./Pages/AdminDashboard"; 
-import AdminSidebar from "./components/AdminSidebaar";
+
 
 import BookingPage from './Pages/BookingPage';
 

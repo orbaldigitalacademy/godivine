@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import AdminSidebar from "../components/AdminSidebaar";
 import "./AdminDashboard.css";
 
 const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:5000";
@@ -56,7 +55,6 @@ function AdminDashboard() {
 
   return (
     <div className="dashboard-container">
-      <AdminSidebar />
 
       <div className="dashboard-content">
         <h1 className="dashboard-title">Admin Dashboard</h1>
