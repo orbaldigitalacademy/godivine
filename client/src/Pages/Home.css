@@ -13,6 +13,8 @@ body {
   
 }
 
+
+
 .section-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -22,17 +24,19 @@ body {
 
 .hero {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
-  text-align: left;         /* align text left */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
   padding: 60px 20px;
   margin-top: 50px;
   padding-top: 80px;
 }
-
 
 .overlay {
   position: absolute;
@@ -40,14 +44,20 @@ body {
   background: rgba(0, 0, 0, 0.55);
 }
 
+
 .hero .section-container {
   position: relative;
   z-index: 2;
-  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .hero-text {
   max-width: 650px;
+  margin: 0 auto;
 }
 
 .hero h1 {
@@ -60,6 +70,7 @@ body {
   color: rgba(255, 255, 255, 0.85);
   font-size: 1.5rem;
   margin-bottom: 30px;
+  line-height: 1.6;
 }
 
 /* ================= HERO CTA PREMIUM ================= */
@@ -86,6 +97,77 @@ body {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
 }
 
+/* ================= TABLET ================= */
+
+@media (max-width: 992px) {
+  .hero {
+    padding: 80px 30px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 3.2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: 120px 20px 80px;
+    margin-top: 0;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 24px;
+  }
+
+  .button {
+    padding: 14px 30px;
+    font-size: 0.75rem;
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+}
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 110px 16px 70px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .button {
+    padding: 13px 24px;
+    font-size: 0.72rem;
+    letter-spacing: 1px;
+  }
+}
 /* ================= SERVICES ================= */
 .services {
   text-align: left;

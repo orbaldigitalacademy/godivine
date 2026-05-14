@@ -3,30 +3,53 @@ import styled from "styled-components";
 import Logo from "./Logo";
 
 /* ===== Styled Components ===== */
+
 const Nav = styled.nav`
   position: sticky;
   top: 0;
   width: 100%;
   background: linear-gradient(135deg, var(--brand-green-dark), var(--dark));
-  box-shadow: none;
   z-index: 1000;
 `;
-
 
 const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-  padding: 22px 40px;
+  padding: 18px 40px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  /* Tablet */
+  @media (max-width: 768px) {
+    padding: 16px 20px;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  /* Small phones */
+  @media (max-width: 480px) {
+    padding: 14px 16px;
+  }
 `;
 
 const Links = styled.div`
   display: flex;
-  gap: 40px;
+  gap: 32px;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    gap: 18px;
+    width: 100%;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 14px;
+  }
 `;
 
 const StyledLink = styled(NavLink)`
@@ -34,11 +57,7 @@ const StyledLink = styled(NavLink)`
   color: var(--brand-green);
   padding: 5px 5px;
   border-radius: 30px;
-  text-decoration: none;
-  font-weight: 300;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-  
+
   font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.5px;
@@ -67,6 +86,14 @@ const StyledLink = styled(NavLink)`
   &.active::after {
     width: 100%;
   }
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
 `;
 
 const OrderButton = styled(NavLink)`
@@ -92,8 +119,18 @@ const OrderButton = styled(NavLink)`
   &.active {
     background: var(--primary-dark);
   }
-`;
 
+  @media (max-width: 768px) {
+    padding: 10px 20px;
+    font-size: 0.75rem;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    text-align: center;
+    max-width: 260px;
+  }
+`;
 
 /* ===== Component ===== */
 
@@ -102,13 +139,27 @@ function Navbar() {
     <Nav>
       <Container>
         <Logo />
+
         <Links>
-          <StyledLink to="/" end>Home</StyledLink>
-          <StyledLink to="/about">About Us</StyledLink>
-          <StyledLink to="/gallery">Gallery</StyledLink>
-          <OrderButton to="/booking">Book Your Event</OrderButton>
-          <StyledLink to="/contact">Contact</StyledLink>
-          
+          <StyledLink to="/" end>
+            Home
+          </StyledLink>
+
+          <StyledLink to="/about">
+            About Us
+          </StyledLink>
+
+          <StyledLink to="/gallery">
+            Gallery
+          </StyledLink>
+
+          <OrderButton to="/booking">
+            Book Your Event
+          </OrderButton>
+
+          <StyledLink to="/contact">
+            Contact
+          </StyledLink>
         </Links>
       </Container>
     </Nav>

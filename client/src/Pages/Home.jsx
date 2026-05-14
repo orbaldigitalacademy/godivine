@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./hom.css";
+import "./Home.css";
 
 function Home() {
   const [openChat, setOpenChat] = useState(false);
