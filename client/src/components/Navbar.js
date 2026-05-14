@@ -4,71 +4,50 @@ import Logo from "./Logo";
 
 /* ===== Styled Components ===== */
 
-const Nav = styled.nav`
-  position: sticky;
-  top: 0;
-  width: 100%;
-  background: linear-gradient(135deg, var(--brand-green-dark), var(--dark));
-  z-index: 1000;
-`;
-
-const Container = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 18px 40px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  /* Tablet */
-  @media (max-width: 768px) {
-    padding: 16px 20px;
-    flex-direction: column;
-    gap: 18px;
-  }
-
-  /* Small phones */
-  @media (max-width: 480px) {
-    padding: 14px 16px;
-  }
-`;
-
 const Links = styled.div`
   display: flex;
   gap: 32px;
   align-items: center;
-  flex-wrap: wrap;
   justify-content: center;
 
   @media (max-width: 768px) {
-    gap: 18px;
     width: 100%;
+
+    /* Switch to grid on mobile */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
 
   @media (max-width: 480px) {
-    flex-direction: column;
-    gap: 14px;
+    grid-template-columns: 1fr;
   }
 `;
 
 const StyledLink = styled(NavLink)`
   text-decoration: none;
   color: var(--brand-green);
-  padding: 5px 5px;
-  border-radius: 30px;
+  padding: 12px 16px;
+  border-radius: 12px;
 
   font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.5px;
   position: relative;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+
+  text-align: center;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.06);
+  }
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -6px;
-    left: 0;
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 0%;
     height: 2px;
     background: var(--gold);
@@ -76,29 +55,22 @@ const StyledLink = styled(NavLink)`
   }
 
   &:hover::after {
-    width: 100%;
+    width: 60%;
   }
 
   &.active {
     color: var(--gold);
+    background: rgba(255, 255, 255, 0.05);
   }
 
   &.active::after {
-    width: 100%;
-  }
-
-  @media (max-width: 768px) {
-    font-size: 0.9rem;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 1rem;
+    width: 60%;
   }
 `;
 
 const OrderButton = styled(NavLink)`
-  padding: 10px 24px;
-  border-radius: 40px;
+  padding: 12px 18px;
+  border-radius: 12px;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.8rem;
@@ -107,6 +79,8 @@ const OrderButton = styled(NavLink)`
 
   background: linear-gradient(135deg, var(--dark));
   color: gold;
+
+  text-align: center;
 
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   transition: all 0.35s ease;
@@ -121,17 +95,9 @@ const OrderButton = styled(NavLink)`
   }
 
   @media (max-width: 768px) {
-    padding: 10px 20px;
-    font-size: 0.75rem;
-  }
-
-  @media (max-width: 480px) {
     width: 100%;
-    text-align: center;
-    max-width: 260px;
   }
 `;
-
 /* ===== Component ===== */
 
 function Navbar() {
