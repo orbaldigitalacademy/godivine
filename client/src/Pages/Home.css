@@ -354,7 +354,9 @@ body {
 .testimonials {
   background: linear-gradient(to bottom, #f9f7f3, #f1ede7);
   text-align: center;
+  margin-top: 50px;
   overflow: hidden;
+   
 }
 
 .testimonials h2 {
