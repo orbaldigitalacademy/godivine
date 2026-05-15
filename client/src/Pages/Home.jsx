@@ -4,7 +4,7 @@ import "./Home.css";
 function Home() {
   const [openChat, setOpenChat] = useState(false);
 
-  const phoneNumber = "2348127319882";
+  const phoneNumber = "+17328019887";
 
   const createWhatsAppLink = (message) => {
     return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
