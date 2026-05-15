@@ -4,9 +4,9 @@ import "./About.css"; // make sure to create this file and include the CSS below
 function About() {
   return (
     <div className="page">
-      <h2>About Go Divine Catering Services</h2>
+      <h2>About Go-Divine Catering Services</h2>
       <p>
-        At Go Divine Catering Services, we believe every event deserves a divine touch.
+        At Go-Divine Catering Services, we believe every event deserves a divine touch.
         We are a premium catering brand dedicated to delivering exceptional culinary experiences 
         that combine taste, elegance, and unforgettable presentation.
       </p>
