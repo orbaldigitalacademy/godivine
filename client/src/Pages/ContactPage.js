@@ -4,7 +4,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const phoneNumber = "2348127319882";
+const phoneNumber = "+17328019887";
 
 export function ContactPage() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -90,8 +90,8 @@ export function ContactPage() {
 
           <div style={{ background: "#f3f4f6", padding: "15px", borderRadius: "10px" }}>
             <h3>Quick Contact</h3>
-            <p>📞 +234 812 731 9882</p>
-            <p>📍 Abuja, Nigeria</p>
+            <p>📞 +17328019887</p>
+            <p>📍 , United States</p>
             <a
               href={`https://wa.me/${phoneNumber}`}
               target="_blank"
