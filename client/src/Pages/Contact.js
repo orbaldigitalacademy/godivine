@@ -108,4 +108,4 @@ function Contact() {
     </ContactWrapper>
   );
 }
-export default contact;
+export default Contact;
