@@ -9,7 +9,7 @@ function Contact() {
       <p><strong>Email:</strong> gloriaomowole@yahoo.com</p>
       <p><strong>Address:</strong> USA</p>
 
-      <h3>Or call to place your order directly.</h3>
+      <h3call to place your order directly.</h3>
     </div>
   );
 }
