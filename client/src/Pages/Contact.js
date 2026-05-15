@@ -285,7 +285,7 @@ function Contact() {
                   borderRadius: "18px",
                 }}
                 loading="lazy"
-                src="https://www.google.com/maps?q=Abuja,Nigeria&output=embed"
+                src="https://www.google.com/maps?q=New Jersey, United States&output=embed"
               ></iframe>
             </div>
 
@@ -302,7 +302,7 @@ function Contact() {
               </Info>
 
               <Info>
-                <strong>Address:</strong> USA
+                <strong>Address:</strong>New Jersey, United States
               </Info>
 
               <WhatsAppLink
