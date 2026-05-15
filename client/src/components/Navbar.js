@@ -6,7 +6,7 @@ import Logo from "./Logo";
 
 const Nav = styled.nav`
   width: 100%;
-  background: var(--background-dark);
+  background: var(--background-dark, --brand-green-dark);
   padding: 1rem 0;
 `;
 
