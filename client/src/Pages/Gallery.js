@@ -5,7 +5,7 @@ function Gallery() {
   // Gallery Data
   const galleryItems = [
     
-    { type: "image", src: "/images/Poundo.jpeg" },
+    { type: "image", src: "/images/poundo.jpeg" },
     { type: "image", src: "/images/Vegetable.jpeg" },
     { type: "image", src: "/images/MoiMoi.jpeg" },
     { type: "image", src: "/images/Okro.jpeg" },
