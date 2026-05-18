@@ -15,7 +15,7 @@ function Gallery() {
     { type: "image", src: "/images/Fish.jpeg" },
     { type: "image", src: "/images/meat.jpeg" },
     { type: "image", src: "/images/Jollof.jpeg" },
-    { type: "image", src: "/images/jollofrice2.jpeg" },
+    { type: "image", src: "/images/jollofrice.jpeg" },
     { type: "image", src: "/images/iseiwu.jpeg" },
     { type: "image", src: "/images/plantain.jpeg" },
     { type: "image", src: "/images/friedPlantain.jpg" },
