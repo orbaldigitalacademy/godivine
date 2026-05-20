@@ -47,9 +47,8 @@ const Links = styled.div`
 
 const StyledLink = styled(NavLink)`
   text-decoration: none;
-  color: #056608;
+  color: #02590F;
   
-
   padding: 12px 16px;
   border-radius: 12px;
 
