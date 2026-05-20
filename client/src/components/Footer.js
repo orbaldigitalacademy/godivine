@@ -133,9 +133,9 @@ function Footer() {
           {/* Contact */}
           <Section>
             <Title>Contact</Title>
-            <Text>Email: info@luxurycatering.com</Text>
-            <Text>Phone: +1 (123) 456-7890</Text>
-            <Text>New York, USA</Text>
+            <Text>Email: gloriaomowole@gmail.com</Text>
+            <Text>Phone: +1 (732) 801-9887</Text>
+            <Text>Edison New Jersey, USA</Text>
           </Section>
 
           {/* Social */}
