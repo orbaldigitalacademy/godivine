@@ -153,7 +153,7 @@ function Footer() {
         <Divider />
 
         <BottomBar>
-          © {new Date().getFullYear()} Godivine Catering. All rights reserved.
+          © {new Date().getFullYear()} Go-Divine Catering. All rights reserved.
         </BottomBar>
       </Container>
     </FooterWrapper>
