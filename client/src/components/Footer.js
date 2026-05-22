@@ -112,7 +112,7 @@ function Footer() {
           {/* Brand */}
           <Section>
             <LogoText>
-              Godivine <span>Catering</span>
+              Go-Divine <span>Catering</span>
             </LogoText>
             <Text>
               Curated culinary experiences for weddings, corporate events,
